@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <title>Cart</title>
+        <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    </head>
+    <body>
+        <div class="cart-heading">
+            <span style="background-color: #194699; color: white; padding: 4px 10px; border-radius: 15px; ">CART</span> <span style="background-color: white; padding: 4px 10px;border-radius: 15px;">— CHECKOUT</span>
+        </div>
+
+        <div class="cart-id">
+            <div style="display: flex;">
+                <p style="font-size: 20px; font-weight: 600;margin-right: 20px;">Cart #0098234567</p>
+                <i class="fa-solid fa-pencil"></i>
+            </div>
+            <div style="display: flex; gap: 20px">
+                <i class="fa-solid fa-print"></i>
+                <i class="fa-solid fa-up-right-from-square"></i>
+            </div>
+        </div>
+
+        <div class="cart-info">
+            <div class="cart-filter">
+                <p>Cart</p>
+                <select>
+                    <option value="1">#0098234567</option>
+                </select>
+            </div>
+
+            <div class="cart-number">
+                <p>Number</p>
+                <p id="number">0098234567</p>
+            </div>
+
+            <div class="delivery-date">
+                <p>Delivery Date</p>
+                <div id="date">
+                    <p>08/22/23</p>
+                    <i class="fa-regular fa-calendar"></i>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+
+        <div class="cart-table">
+            <div class="search-bar">
+                <div class="search-group">
+                    <div class="input-group">
+                        <input type="text" placeholder="Search by Item Name or Brand" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <p>QUICK ADD ITEMS</p>
+                    <p>UPLOAD CSV</p>
+                </div>
+                <div class="item-group">    
+                    <p style="font-weight: 600;">10 items</p>
+                    <div class="item">
+                        <i class="fa-solid fa-list" style="background-color: #dedede; border-radius: 40px; padding-top: 10px;"></i>
+                        <i class="fa-solid fa-border-all"></i>
+                    </div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Brand ↑↓</th>
+                        <th>Pack/size</th>
+                        <th>Quantity</th>
+                        <th>Unit Price ↑↓</th>
+                        <th>Total Value</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p style="color: #194699; font-weight: 700;">#169042</p>Beef Tenderlion Prime</td>
+                        <td>Wiran Meat</td>
+                        <td>1/10 lbs</td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>1</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td>$10.00</td>
+                        <td>$20.00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><p style="color: #194699; font-weight: 700;">#234323</p>Butter Stick Soy Free</td>
+                        <td>Earth Balance</td>
+                        <td>1/10 lbs</td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>1</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td>$10.00</td>
+                        <td>$20.00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><p style="color: #194699; font-weight: 700;">#4565451</p>Lemonade Frozen Condensed</td>
+                        <td>Creative Bewblends</td>
+                        <td>9/64 oz</td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>1</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td>$10.00</td>
+                        <td>$20.00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><p style="color: #194699; font-weight: 700;">#393399</p>Easy Whole Easy Eggs</td>
+                        <td>Papettis</td>
+                        <td>1/10 lbs</td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>24</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td>$10.00</td>
+                        <td>$20.00</td>
+                        <td><i class="fa-regular fa-trash-can"></i></td>
+                    </tr>
+                    <tr>
+                        <td><p style="color: #194699; font-weight: 700;">#123487</p>Coconut Snowflake Bulk</td>
+                        <td>Snowflake</td>
+                        <td>1/10 lbs</td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>20</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td>$10.00</td>
+                        <td>$20.00</td>
+                        <td><i class="fa-regular fa-trash-can"></i></td>
+                    </tr>
+                    <tr>
+                        <td><p style="color: #194699; font-weight: 700;">#223123</p>Egg Fresh Shell Medium USDA</td>
+                        <td>Ellington Farms</td>
+                        <td>1/10 lbs</td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>6</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td>$10.00</td>
+                        <td>$20.00</td>
+                        <td><i class="fa-regular fa-trash-can"></i></td>
+                    </tr>
+                    <tr>
+                        <td><p style="color: #194699; font-weight: 700;">#123458</p>Flour Hotel & Restaurant</td>
+                        <td>Ellington Farms</td>
+                        <td>1/10 lbs</td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>9</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td>$10.00</td>
+                        <td>$20.00</td>
+                        <td><i class="fa-regular fa-trash-can"></i></td>
+                    </tr>
+                    <tr>
+                        <td><p style="color: #194699; font-weight: 700;">#123490</p>Abita Root Beer</td>
+                        <td>Abita</td>
+                        <td>1/10 lbs</td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>1</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td>$10.00</td>
+                        <td>$20.00</td>
+                        <td><i class="fa-regular fa-trash-can"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+
+        <div class="frequent-items">
+            <div class="item-header">
+                <p style="width: 80%;margin-right: 300px; font-size: 20px; font-weight: 600;">Frequently Bought Items</p>
+                <div style="display: flex; gap:20px">
+                    <i class="fa-solid fa-circle-chevron-left fa-xl" style="color: #C1C5C6;"></i>
+                    <i class="fa-solid fa-circle-chevron-right fa-xl" style="color: #093FA1;"></i>
+                </div>    
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/avocado.jpg" alt="avocado">
+                    <p id="card-number">#1204856</p>
+                    <p style="font-size: 18px; font-weight: 600;">Avocado Hass Green</p>
+                    <p>PACKED</p>
+                    <p>$58.26</p>
+                    <i class="fa-solid fa-circle-minus " style="color: #b0b0b0;"></i> <span>0</span> <i class="fa-solid fa-circle-plus  "></i>
+                    <p>In Stock: 100</p>
+                </div>
+                <div class="card">
+                    <img src="images/cranberry.jpg" alt="cranberry">
+                    <p id="card-number">#1204856</p>
+                    <p style="font-size: 18px; font-weight: 600;">Cranberry</p>
+                    <p >PACKED</p>
+                    <p>$58.26</p>
+                    <i class="fa-solid fa-circle-minus " style="color: #b0b0b0;"></i> <span>0</span> <i class="fa-solid fa-circle-plus "></i>
+                    <p>In Stock: 100</p>
+                </div>
+                <div class="card">
+                    <img src="images/beef.jpg" alt="beef">
+                    <p id="card-number">#1204856</p>
+                    <p style="font-size: 18px; font-weight: 600;">Beef Tri Tip</p>
+                    <p>PACKED</p>
+                    <p>$58.26</p>
+                    <i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"></i> <span>0</span> <i class="fa-solid fa-circle-plus  "></i>
+                    <p>In Stock: 100</p>
+                </div>
+                <div class="card">
+                    <img src="images/salmon.jpg" alt="salmon">
+                    <p id="card-number">#1204856</p>
+                    <p style="font-size: 18px; font-weight: 600;">Salmon Fillet Keta 4 Oz</p>
+                    <p>PACKED</p>
+                    <p>$58.26</p>
+                    <i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"></i> <span>0</span> <i class="fa-solid fa-circle-plus  "></i>
+                    <p>In Stock: 100</p>
+                </div>
+                <div class="card">
+                    <img src="images/lemonade.jpg" alt="lemonade">
+                    <p id="card-number">#1204856</p>
+                    <p style="font-size: 18px; font-weight: 600;">Lemonade</p>
+                    <p>PACKED</p>
+                    <p>$58.26</p>
+                    <i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"></i> <span>0</span> <i class="fa-solid fa-circle-plus  "></i>
+                    <p>In Stock: 100</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
