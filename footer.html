@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light background for the page */
+        }
+
+        footer {
+            display: flex; /* Flexbox for horizontal layout */
+            justify-content: space-between; /* Space between sections */
+            background-color: white; /* Dark background for footer */
+            color: black; /* White text color */
+            padding: 20px; /* Padding for footer */
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        }
+
+        .footer-section {
+            flex: 1; /* Equal width for each section */
+            margin: 0 10px; /* Margin for spacing */
+        }
+
+        .footer-section h3 {
+            margin-bottom: 10px; /* Space below section title */
+        }
+
+        .footer-section ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+        }
+
+        .footer-section ul li {
+            margin: 10px 0; /* Space between list items */
+        }
+
+        .footer-section ul li a {
+            color: black; 
+            text-decoration: none; /* No underline */
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        .bottom-footer {
+            display: flex; /* Flexbox for horizontal layout */
+            justify-content: space-between; /* Space between items */
+            align-items: center; /* Center items vertically */
+            width: 100%; /* Full width */
+            padding: 10px 20px; /* Padding for bottom footer */
+            background-color: white; 
+            color: black; 
+        }
+
+        .logo-company {
+            display: flex; /* Flexbox for logo and name */
+            align-items: center; /* Align vertically */
+        }
+
+        .logo-company img {
+            height: 40px; /* Adjust logo size */
+            margin-right: 10px; /* Space between logo and company name */
+        }
+
+        .company-name {
+            font-size: 24px;
+            font-weight: bold; /* Optional: make the company name bold */
+        }
+
+        .copyright {
+            margin-left: 20px;
+            margin-bottom: -10px;
+            font-size: 18px;
+        }
+
+        .social-icons{
+            color: black;
+        }
+
+        .language-selector {
+            background-color: white; /* Background for select */
+            color: black; /* Text color */
+            font-size: 18px;
+            margin-right: 40px;
+            margin-bottom: -10px;
+            border: black; /* No border */
+            padding: 5px; /* Padding for select */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Ben E Keith</a></li>
+                <li><a href="#">Our Brands</a></li>
+                <li><a href="#">News Feed</a></li>
+                <li><a href="#">Eat Local Eat Often</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="#">Menu Max</a></li>
+                <li><a href="#">Host Services</a></li>
+                <li><a href="#">Culinary Resource Team</a></li>
+                <li><a href="#">Newsletter</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Customer Support</h3>
+            <ul>
+                <li><a href="#">Contact your Sales Rep</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Site Feedback</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Policy and Terms</h3>
+            <ul>
+                <li><a href="#">License Agreement</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f">&nbsp;&nbsp;</i></a>
+                <a href="#"><i class="fab fa-youtube">&nbsp;&nbsp;</i></a>
+                <a href="#"><i class="fab fa-twitter">&nbsp;&nbsp;</i></a>
+                <a href="#"><i class="fab fa-instagram">&nbsp;&nbsp;</i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Sign Up</h3 
+                <li><a href="#">Receive exclusive emails only promotions and offers</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="bottom-footer">
+        <div class="logo-company">
+            <img src="images/logo.png" alt="Company Logo">
+            <div class="company-name">entree</div>
+        </div>
+        <div class="copyright">Copyright &copy; 2023 Ben E Keith. All rights reserved.</div>
+        <div>
+            <label for="language-selector">Select Language:</label>
+            <select id="language-selector" class="language-selector">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
