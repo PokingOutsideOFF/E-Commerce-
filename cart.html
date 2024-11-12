@@ -8,21 +8,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
     </head>
     <body>
-        
         <iframe src="header.html" width="100%" height="131vh" style="border: none;"></iframe>
 
         <div class="cart-heading">
-            <button class="button-common cart-btn">CART</button> — <button class="button-common checkout-btn"><a href="checkout.html">CHECKOUT</a></button>
+            <button class="button-common cart-btn">CART</button> <i class="fa-solid fa-minus"></i> <button class="button-common checkout-btn"><a href="checkout.html">CHECKOUT</a></button>
         </div>
 
-        
-
         <div class="cart-id">
-            <div style="display: flex;">
+            <div>
                 <p style="font-size: 20px; font-weight: 600;margin-right: 20px;">Cart #0098234567</p>
                 <i class="fa-solid fa-pencil"></i>
             </div>
-            <div style="display: flex; gap: 20px">
+            <div style="gap: 20px">
                 <i class="fa-solid fa-print"></i>
                 <i class="fa-solid fa-up-right-from-square"></i>
             </div>
@@ -44,8 +41,7 @@
             <div class="delivery-date">
                 <p>Delivery Date</p>
                 <div id="date">
-                    <p>08/22/23</p>
-                    <i class="fa-regular fa-calendar"></i>
+                    <input type="date" value="2023-02-22">
                 </div>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </div>
@@ -73,10 +69,10 @@
                 <thead>
                     <tr>
                         <th>Item</th>
-                        <th>Brand ↑↓</th>
+                        <th>Brand</th>
                         <th>Pack/size</th>
-                        <th>Quantity</th>
-                        <th>Unit Price ↑↓</th>
+                        <th style="padding-left: 18px;">Quantity</th>
+                        <th>Unit Price</th>
                         <th>Total Value</th>
                         <th></th>
                     </tr>
@@ -86,7 +82,7 @@
                         <td><p style="color: #194699; font-weight: 700;">#169042</p>Beef Tenderlion Prime</td>
                         <td>Wiran Meat</td>
                         <td>1/10 lbs</td>
-                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>1</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"></i> <span>1</span> <i class="fa-solid fa-circle-plus "></i></td>
                         <td>Rs 10.00</td>
                         <td>Rs 20.00</td>
                         <td></td>
@@ -95,7 +91,7 @@
                         <td><p style="color: #194699; font-weight: 700;">#234323</p>Butter Stick Soy Free</td>
                         <td>Earth Balance</td>
                         <td>1/10 lbs</td>
-                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>1</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"></i> <span>1</span> <i class="fa-solid fa-circle-plus "></i></td>
                         <td>Rs 10.00</td>
                         <td>Rs 20.00</td>
                         <td></td>
@@ -104,7 +100,7 @@
                         <td><p style="color: #194699; font-weight: 700;">#4565451</p>Lemonade Frozen Condensed</td>
                         <td>Creative Bewblends</td>
                         <td>9/64 oz</td>
-                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>1</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"></i> <span>1</span> <i class="fa-solid fa-circle-plus "></i></td>
                         <td>Rs 10.00</td>
                         <td>Rs 20.00</td>
                         <td></td>
@@ -113,7 +109,7 @@
                         <td><p style="color: #194699; font-weight: 700;">#393399</p>Easy Whole Easy Eggs</td>
                         <td>Papettis</td>
                         <td>1/10 lbs</td>
-                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>24</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"></i> <span>24</span> <i class="fa-solid fa-circle-plus "></i></td>
                         <td>Rs 10.00</td>
                         <td>Rs 20.00</td>
                         <td><i class="fa-regular fa-trash-can"></i></td>
@@ -122,7 +118,7 @@
                         <td><p style="color: #194699; font-weight: 700;">#123487</p>Coconut Snowflake Bulk</td>
                         <td>Snowflake</td>
                         <td>1/10 lbs</td>
-                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>20</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"></i> <span>20</span> <i class="fa-solid fa-circle-plus "></i></td>
                         <td>Rs 10.00</td>
                         <td>Rs 20.00</td>
                         <td><i class="fa-regular fa-trash-can"></i></td>
@@ -131,7 +127,7 @@
                         <td><p style="color: #194699; font-weight: 700;">#223123</p>Egg Fresh Shell Medium USDA</td>
                         <td>Ellington Farms</td>
                         <td>1/10 lbs</td>
-                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>6</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"></i> <span>6</span> <i class="fa-solid fa-circle-plus "></i></td>
                         <td>Rs 10.00</td>
                         <td>Rs 20.00</td>
                         <td><i class="fa-regular fa-trash-can"></i></td>
@@ -140,7 +136,7 @@
                         <td><p style="color: #194699; font-weight: 700;">#123458</p>Flour Hotel & Restaurant</td>
                         <td>Ellington Farms</td>
                         <td>1/10 lbs</td>
-                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>9</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"></i> <span>9</span> <i class="fa-solid fa-circle-plus "></i></td>
                         <td>Rs 10.00</td>
                         <td>Rs 20.00</td>
                         <td><i class="fa-regular fa-trash-can"></i></td>
@@ -149,7 +145,7 @@
                         <td><p style="color: #194699; font-weight: 700;">#123490</p>Abita Root Beer</td>
                         <td>Abita</td>
                         <td>1/10 lbs</td>
-                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"> <span>1</span> <i class="fa-solid fa-circle-plus "></i></td>
+                        <td><i class="fa-solid fa-circle-minus" style="color: #b0b0b0;"></i> <span>1</span> <i class="fa-solid fa-circle-plus "></i></td>
                         <td>Rs 10.00</td>
                         <td>Rs 20.00</td>
                         <td><i class="fa-regular fa-trash-can"></i></td>
@@ -171,7 +167,7 @@
             <div class="card-container">
                 <div class="card">
                     <img src="images/avocado.jpg" alt="avocado">
-                    <p id="card-number">#1204856</p>
+                    <p>#1204856</p>
                     <p style="font-size: 18px; font-weight: 600;">Avocado Hass Green</p>
                     <p>PACKED</p>
                     <p>Rs 58.26</p>
@@ -180,7 +176,7 @@
                 </div>
                 <div class="card">
                     <img src="images/cranberry.jpg" alt="cranberry">
-                    <p id="card-number">#1204856</p>
+                    <p>#1204856</p>
                     <p style="font-size: 18px; font-weight: 600;">Cranberry</p>
                     <p >PACKED</p>
                     <p>Rs 58.26</p>
@@ -189,7 +185,7 @@
                 </div>
                 <div class="card">
                     <img src="images/beef.jpg" alt="beef">
-                    <p id="card-number">#1204856</p>
+                    <p>#1204856</p>
                     <p style="font-size: 18px; font-weight: 600;">Beef Tri Tip</p>
                     <p>PACKED</p>
                     <p>Rs 58.26</p>
@@ -198,7 +194,7 @@
                 </div>
                 <div class="card">
                     <img src="images/salmon.jpg" alt="salmon">
-                    <p id="card-number">#1204856</p>
+                    <p>#1204856</p>
                     <p style="font-size: 18px; font-weight: 600;">Salmon Fillet Keta 4 Oz</p>
                     <p>PACKED</p>
                     <p>Rs 58.26</p>
@@ -207,7 +203,7 @@
                 </div>
                 <div class="card">
                     <img src="images/lemonade.jpg" alt="lemonade">
-                    <p id="card-number">#1204856</p>
+                    <p>#1204856</p>
                     <p style="font-size: 18px; font-weight: 600;">Lemonade</p>
                     <p>PACKED</p>
                     <p>Rs 58.26</p>
