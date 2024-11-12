@@ -9,32 +9,62 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">    
 </head>
 <body>
     <iframe src="header.html" width="100%" height="131vh" style="border: none;"></iframe>
 
     <div class="cart-heading">
-        <button class="cart-btn"><a href="cart.html">CART</a></button> — <button class="checkout-btn">CHECKOUT</a></button>
+        <button class="button-common cart-btn"><a href="cart.html">CART</a></button> — <button class="button-common checkout-btn">CHECKOUT</button>
     </div>
 
     <div class="container">
         <div class="payment-options">
             <p>Select Payment Method</p>
-            <button><i class="fa-regular fa-money-bill-1 fa-2xl"></i></button>
-            <button><img src="images/upi-icon.jpg" alt=""></button>
+            <div class="payment-icons">
+                <div class="payment-icon selected" data-payment="cash">
+                    <i class="fa-regular fa-money-bill-1 fa-2xl"></i>
+                </div>
+                <div class="payment-icon" data-payment="upi">
+                    <i class="fa-brands fa-google-pay fa-2xl"></i>
+                </div>
+                <div class="payment-icon" data-payment="card">
+                    <i class="fa-brands fa-cc-visa fa-2xl"></i>
+                </div>
+            </div>
+            <input type="text" id="payment-input" placeholder="Enter UPI ID or Card Details" disabled>
+            <hr style="margin-top: 50px;">    
+            <div class="payment-total">
+                <h2>Total: Rs 2000</h2>
+                <button class="coupon">Apply Coupon</button>
+                <button class="change-address-btn">PAY</button>
+            </div>
         </div>
         <div class="info">
             <p>Address</p>
-            <textarea cols="30" disabled> 102/B Jasmine Towers,  Plain Road
-            Chembur 
-            Pincode - 400300
-            </textarea>
+            <textarea cols="30" disabled>102/B Jasmine Towers, Plain Road, Chembur Pincode - 400300</textarea>
+            <button class="change-address-btn">Change Address</button>
         </div>
-
     </div>
+    
     <iframe src="footer.html" width="100%" height="305vh" style="border: none; margin-top: 100px;"></iframe>
 
+
+    <script>
+        // JavaScript to toggle input based on selected payment method
+        const paymentIcons = document.querySelectorAll('.payment-icon');
+        const paymentInput = document.getElementById('payment-input');
+
+        paymentIcons.forEach(icon => {
+            icon.addEventListener('click', () => {
+                // Remove 'selected' class from all icons and add to clicked one
+                paymentIcons.forEach(i => i.classList.remove('selected'));
+                icon.classList.add('selected');
+
+                // Enable input if UPI or Card selected; disable if Cash selected
+                paymentInput.disabled = icon.dataset.payment === "cash";
+            });
+        });
+    </script>
 </body>
 </html>
