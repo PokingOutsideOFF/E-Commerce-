@@ -78,9 +78,10 @@ button{
     margin-bottom: 20px;
 }
 
+.payment-options i{
+    width: 50px;
+}
 
 .payment-options img{
     width: 50px;
-    padding-left: 10px;
-    padding-top: 20px;
 }
