@@ -16,7 +16,10 @@ body{
   /* margin-top: 2px; */
 }
 .header .inp{
-  width: 25vw;
+  width: 40vw;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
 }
 .header img{
   margin-right: 25px;
@@ -26,12 +29,17 @@ body{
 }
 input{
   width: 100%;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 10px 20px;
+  border: none
 }
 .navbar{
   margin: 0;
   padding: 0;
+}
+
+i{
+  padding-top: 8px;
 }
 
 .navbar ul{
@@ -62,3 +70,4 @@ li{
 .icons img{
   cursor: pointer;
 }
+
