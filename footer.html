@@ -13,6 +13,7 @@
         }
 
         footer {
+            max-width: 100%;
             display: flex; /* Flexbox for horizontal layout */
             justify-content: space-between; /* Space between sections */
             background-color: white; /* Dark background for footer */
@@ -24,6 +25,7 @@
         .footer-section {
             flex: 1; /* Equal width for each section */
             margin: 0 10px; /* Margin for spacing */
+            margin-left: 50px;
         }
 
         .footer-section h3 {
@@ -86,13 +88,18 @@
         .language-selector {
             background-color: white; /* Background for select */
             color: black; /* Text color */
-            font-size: 18px;
+            font-size: 16px;
             margin-right: 40px;
             margin-bottom: -10px;
             border: black; /* No border */
             padding: 5px; /* Padding for select */
             border-radius: 5px; /* Rounded corners */
             cursor: pointer; /* Pointer cursor on hover */
+        }
+
+        label[for="language-selector"] {
+            font-size: 16px; /* Adjust the font size as needed */
+            margin-right: -5px; /* Space between label and select */
         }
     </style>
 </head>
@@ -136,11 +143,12 @@
                 <a href="#"><i class="fab fa-facebook-f">&nbsp;&nbsp;</i></a>
                 <a href="#"><i class="fab fa-youtube">&nbsp;&nbsp;</i></a>
                 <a href="#"><i class="fab fa-twitter">&nbsp;&nbsp;</i></a>
-                <a href="#"><i class="fab fa-instagram">&nbsp;&nbsp;</i></a>
+                <a href="#"><i class="fab fa-instagram">&nbsp;</i></a>
             </div>
         </div>
         <div class="footer-section">
-            <h3>Sign Up</h3 
+            <h3>Sign Up</h3>
+            <ul>
                 <li><a href="#">Receive exclusive emails only promotions and offers</a></li>
             </ul>
         </div>
