@@ -26,7 +26,7 @@
 
         .container {
             max-width: 100%;
-            margin: 20px auto;
+            margin: 20px 80px;
             background-color: white;
             padding: 20px;
             border-radius: 8px;
@@ -116,6 +116,10 @@
             bottom: 0;
             width: 100%;
         }
+
+        .iframe{
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -169,7 +173,7 @@
     <div id="footer-container"></div>
 
     <!-- JavaScript to load footer.html -->
-    <script>
+    <!-- <script>
         // Fetch the content of footer.html and insert it into the footer-container div
         fetch('footer.html')
             .then(response => response.text())  // Get the HTML as text
@@ -178,7 +182,10 @@
                 document.getElementById('footer-container').innerHTML = data;
             })
             .catch(error => console.error('Error loading footer:', error)); // Handle any errors
-    </script>
+    </script> -->
+
+    <iframe src="footer.html" width="100%" height="277vh" style="border: none;"></iframe>
+
 
 </body>
 </html>

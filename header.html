@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+
 </head>
 <body>
     <div class="header">
@@ -12,9 +16,9 @@
             <img src="./images/entree.jpg" alt="Company Icon" width="140px" height="50px">
         </div>
         <div class="inp">
-            <input type="text" placeholder="What can we help you find" name="search">
+            <input type="text" placeholder="What is your craving today?" name="search">
         </div>
-        <div>
+        <div class="icons">
             Juanis Kitchen - FD010101 
             <img class="align-arrow" src="./images/downarrow-icon.png" alt="Down Arrow" height="12px" width="12px"> 
 
@@ -22,15 +26,15 @@
 
             <img src="./images/user-icon.png" alt="User" height="18px" width="18px"> 
 
-            <img src="./images/cart-icon.png" alt="Cart" height="18px" width="18px"> 
+            <a href="cart.html" target="_top"><img src="./images/cart-icon.png" alt="Cart" height="18px" width="18px"> </a>
         </div>
     </div>
     <div class="navbar">
         <ul>
+            <li><a href="index.html" target="_top">HOME</a></li>
             <li><a href="#">CATEGORIES</a></li>
-            <li><a href="#">BRANDS</a></li>
-            <li><a href="#">MY LISTS</a></li>
-            <li><a href="#">MY ORDER HISTORY</a></li>
+            <li><a href="cart.html" target="cart">CART</a></li>
+            <li><a href="order_history.html" target="_top">ORDER HISTORY</a></li>
             <li class="new-ord"><ahref="#">NEW ORDER</ahref=></li>
         </ul>
     </div>

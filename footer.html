@@ -54,7 +54,7 @@
             display: flex; /* Flexbox for horizontal layout */
             justify-content: space-between; /* Space between items */
             align-items: center; /* Center items vertically */
-            width: 100%; /* Full width */
+            width: 1647px; /* Full width */
             padding: 10px 20px; /* Padding for bottom footer */
             background-color: white; 
             color: black; 
@@ -95,12 +95,15 @@
             padding: 5px; /* Padding for select */
             border-radius: 5px; /* Rounded corners */
             cursor: pointer; /* Pointer cursor on hover */
+            width: fit-content;
         }
 
         label[for="language-selector"] {
             font-size: 16px; /* Adjust the font size as needed */
             margin-right: -5px; /* Space between label and select */
         }
+
+        
     </style>
 </head>
 <body>
@@ -159,7 +162,7 @@
             <div class="company-name">entree</div>
         </div>
         <div class="copyright">Copyright &copy; 2023 Ben E Keith. All rights reserved.</div>
-        <div>
+        <div style="margin-right: 50px">
             <label for="language-selector">Select Language:</label>
             <select id="language-selector" class="language-selector">
                 <option value="en">English</option>

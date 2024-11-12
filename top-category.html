@@ -6,6 +6,7 @@
     <title>Explore Categories</title>
 
     <style>
+        /* Reset and Base Styles */
         * {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
@@ -14,7 +15,7 @@
         }
 
         body {
-            background: white;
+            background: white; /* Soft blue gradient background */
             color: #333;
             display: flex;
             justify-content: center;
@@ -22,15 +23,17 @@
             min-height: 100vh;
         }
 
+        /* Main Container */
         .main-container {
-            /* max-width: 1200px; */
-            background-color: #f8fafa;
-            padding: 20px;
+            max-width: 1200px;
+            background-color: #f8fafa; /* Light gray background */
+            padding: 40px;
             border-radius: 16px;
-            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12); /* Softer shadow */
             overflow: hidden;
         }
 
+        /* Header */
         .header-container {
             display: flex;
             justify-content: space-between;
@@ -64,6 +67,7 @@
             box-shadow: 0px 10px 20px rgba(63, 94, 251, 0.6);
         }
 
+        /* Horizontal Scrollable Menu Items */
         .menu-items {
             display: flex;
             gap: 20px;
@@ -72,12 +76,13 @@
             scroll-behavior: smooth;
         }
 
+        /* Individual Menu Item */
         .menu-item {
             background: linear-gradient(135deg, #f9f9f9, #ffffff);
             border: 1px solid #ddd;
             border-radius: 16px;
             padding: 20px;
-            width: 200px;
+            width: 180px;
             text-align: center;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
             flex-shrink: 0;
@@ -90,14 +95,12 @@
         }
 
         .menu-item img {
-    width: 100px; /* Set a fixed width */
-    height: 100px; /* Set the height to match width for a square shape */
-    object-fit: cover; /* Ensures the image fills the container without stretching */
-    border-radius: 10px;
-    margin-bottom: 15px;
-    transition: transform 0.3s;
-}
-
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
 
         .menu-item:hover img {
             transform: scale(1.05);
@@ -110,6 +113,7 @@
             margin-top: 10px;
         }
 
+        /* Hide scroll bar on Webkit browsers */
         .menu-items::-webkit-scrollbar {
             display: none;
         }
@@ -118,40 +122,38 @@
 <body>
     <div class="main-container">
         <div class="header-container">
-            <h2>Top Categories</h2>
+            <h2>My Top Categories</h2>
             <button class="explore-button">Explore</button>
         </div>
 
         <div class="menu-items">
             <div class="menu-item">
-                <img src="images/chickenbiryani.png" alt="Chicken Biryani">
-                <p>Chicken</p>
+                <img src="images/fruits.png" alt="Fruits, Vegetables and Herbs">
+                <p>Fruits, Vegetables and Herbs</p>
             </div>
             <div class="menu-item">
-                <img src="images/turkey.png" alt="turkey Dish">
-                <p>Turkey</p>
+                <img src="images/poultry.png" alt="Meat, Poultry & Seafood">
+                <p>Meat, Poultry & Seafood</p>
             </div>
             <div class="menu-item">
-                <img src="images/beef.png" alt="Beef">
-                <p>Beef</p>
+                <img src="images/dairy.png" alt="Dairy & Eggs">
+                <p>Dairy & Eggs</p>
             </div>
             <div class="menu-item">
-                <img src="images/mutton.png" alt="Mutton">
-                <p>Mutton</p>
+                <img src="images/grocery.png" alt="Grocery">
+                <p>Grocery</p>
             </div>
             <div class="menu-item">
-                <img src="images/pork.png" alt="POrk">
-                <p>Pork</p>
+                <img src="images/desserts.png" alt="Desserts">
+                <p>Desserts</p>
             </div>
             <div class="menu-item">
-                <img src="images/fish.png" alt="Fish">
-                <p>Fish</p>
-            </div>
-            <div class="menu-item">
-                <img src="images/lamb.png" alt="Lamb">
-                <p>Lamb</p>
+                <img src="images/kitchen.png" alt="Kitchen Essentials">
+                <p>Kitchen Essentials</p>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+

@@ -13,7 +13,26 @@
     padding:15px;
     display: flex;
     justify-content: center;
-    
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.cart-btn{
+    background-color: #194699; 
+    color: white; padding: 4px 25px; border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+}
+
+.checkout-btn{
+    background-color: white; padding: 4px 25px;border-radius: 20px;
+    border: 1px solid  black;
+    margin-left: 10px;
+}
+
+.checkout-btn a{
+    text-decoration: none;
+    color: black;
 }
 
 .cart-id{
