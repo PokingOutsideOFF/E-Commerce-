@@ -14,70 +14,68 @@
         body {
             margin: 0;
             font-family: "Poppins", sans-serif;
-            background-color: #EDF0F9; /* Light background for the page */
+            background-color: #EDF0F9;
         }
 
         footer {
             max-width: 100%;
-            display: flex; /* Flexbox for horizontal layout */
-            justify-content: space-between; /* Space between sections */
-            background-color: #EDF0F9; /* Dark background for footer */
-            color: black; /* White text color */
-            padding: 20px; /* Padding for footer */
-            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            display: flex;
+            justify-content: space-between;
+            background-color: #EDF0F9;
+            color: black;
+            padding: 20px;
+            flex-wrap: wrap;
         }
 
         .footer-section {
-            flex: 1; /* Equal width for each section */
-            margin: 0 10px; /* Margin for spacing */
-            margin-left: 50px;
+            flex: 1;
+            margin: 0 10px 0 50px;
         }
 
         .footer-section h3 {
-            margin-bottom: 10px; /* Space below section title */
+            margin-bottom: 10px;
         }
 
         .footer-section ul {
-            list-style-type: none; /* Remove bullet points */
-            padding: 0; /* Remove padding */
+            list-style-type: none;
+            padding: 0;
         }
 
         .footer-section ul li {
-            margin: 10px 0; /* Space between list items */
+            margin: 10px 0;
         }
 
         .footer-section ul li a {
             color: black; 
-            text-decoration: none; /* No underline */
+            text-decoration: none;
         }
 
         .footer-section ul li a:hover {
-            text-decoration: underline; /* Underline on hover */
+            text-decoration: underline;
         }
 
         .bottom-footer {
-            display: flex; /* Flexbox for horizontal layout */
-            justify-content: space-between; /* Space between items */
-            align-items: center; /* Center items vertically */
-            width: 1647px; /* Full width */
-            padding: 10px 20px; /* Padding for bottom footer */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
             background-color: #EDF0F9; 
             color: black; 
         }
 
         .logo-company {
-            display: flex; /* Flexbox for logo and name */
-            align-items: center; /* Align vertically */
+            display: flex;
+            align-items: center;
         }
 
         .logo-company img {
-            height: 40px; /* Adjust logo size */
-            margin-right: 10px; /* Space between logo and company name */
+            height: 40px;
+            margin-right: 10px;
         }
 
         .company-name {
             font-size: 24px;
-            font-weight: bold; /* Optional: make the company name bold */
+            font-weight: bold;
         }
 
         .copyright {
@@ -91,21 +89,21 @@
         }
 
         .language-selector {
-            background-color: #EDF0F9; /* Background for select */
-            color: black; /* Text color */
+            background-color: #EDF0F9;
+            color: black;
             font-size: 16px;
-            margin-right: 40px;
+            margin-right: 20px;
             margin-bottom: -10px;
-            border: black; /* No border */
-            padding: 5px; /* Padding for select */
-            border-radius: 5px; /* Rounded corners */
-            cursor: pointer; /* Pointer cursor on hover */
+            border: black;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
             width: fit-content;
         }
 
         label[for="language-selector"] {
-            font-size: 16px; /* Adjust the font size as needed */
-            margin-right: -5px; /* Space between label and select */
+            font-size: 16px;
+            margin-right: -5px;
         }
 
         
@@ -165,7 +163,7 @@
             <div class="company-name">entree</div>
         </div>
         <div class="copyright">Copyright &copy; 2023 Ben E Keith. All rights reserved.</div>
-        <div style="margin-right: 50px">
+        <div>
             <label for="language-selector">Select Language:</label>
             <select id="language-selector" class="language-selector">
                 <option value="en">English</option>
