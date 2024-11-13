@@ -35,9 +35,9 @@
             <input type="text" id="payment-input" placeholder="Enter UPI ID or Card Details" disabled>
             <hr style="margin-top: 50px;">    
             <div class="payment-total">
-                <h2>Total: Rs 2000</h2>
+                <h2>Total: Rs 7190</h2>
                 <button class="coupon">Apply Coupon</button>
-                <button class="change-address-btn">PAY</button>
+                <button class="change-address-btn" id="payment-button">ORDER</button>
             </div>
         </div>
         <div class="info">
@@ -63,6 +63,9 @@
 
                 // Enable input if UPI or Card selected; disable if Cash selected
                 paymentInput.disabled = icon.dataset.payment === "cash";
+                document.getElementById('payment-button').textContent = "PAY AND ORDER";
+                if(icon.dataset.payment === "cash")
+                document.getElementById('payment-button').textContent = "ORDER";
             });
         });
     </script>
