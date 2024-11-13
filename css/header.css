@@ -65,6 +65,11 @@ li{
   color: white;
   border-radius: 20px;
   padding: 10px 20px;
+  cursor: pointer;
+}
+
+.new-ord:hover{
+  background-color: rgb(114, 98, 27);
 }
 
 .icons img{
